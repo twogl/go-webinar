@@ -8,7 +8,10 @@ import (
 )
 
 func ReadGitignore() ([]byte, error) {
-	absPath, _ := filepath.Abs("../.gitignore")
+	absPath, err := filepath.Abs("../.gitignore")
+	if err != nil {
+		return nil, fmt.Errorf("get absolute file path: %w", err)
+	}
 
 	file, err := os.Open(absPath)
 	if err != nil {
