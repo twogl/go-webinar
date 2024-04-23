@@ -9,7 +9,7 @@ func main() {
 		sl = append(sl, n)
 	}
 
-	fmt.Println("====================")
+	fmt.Println("=====================")
 
 	sl2 := make([]int, 0, 10)
 	for n := range 10 {
@@ -17,7 +17,7 @@ func main() {
 		sl = append(sl2, n)
 	}
 
-	fmt.Println("====================")
+	fmt.Println("=====================")
 
 	// arr := [2]int{1, 2}
 	// arr2 := arr
