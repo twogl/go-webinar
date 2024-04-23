@@ -3,19 +3,20 @@ package field
 import "fmt"
 
 type Field struct {
-	playerA Moveable
-	playerB Moveable
+	movableA Movable
+	movableB Movable
 }
 
-func NewField(pA, pB Moveable) *Field {
+// Constructor function
+func NewField(pA, pB Movable) *Field {
 	return &Field{
-		playerA: pA,
-		playerB: pB,
+		movableA: pA,
+		movableB: pB,
 	}
 }
 
 func (fld *Field) MovePlayers() string {
-	mvA := fld.playerA.Move()
-	mvB := fld.playerB.Move()
+	mvA := fld.movableA.Move()
+	mvB := fld.movableB.Move()
 	return fmt.Sprintf("=====\nPlayer A moves with speed %d \nand\nPlayer B moves with speed %d \n=====", mvA, mvB)
 }

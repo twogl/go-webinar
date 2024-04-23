@@ -1,6 +1,7 @@
 package main
 
 func main() {
+	// _ is a blank identifier
 	var _ int8 = 127
 	var _ byte = 255 // alias for uint8
 	var _ bool = true
@@ -18,11 +19,11 @@ func main() {
 	var _ [5]string // array
 	var _ []string  // slice
 
+	var _ func(bool) (int, error)
 	var _ chan int
-	var _ func(bool) int
 
 	// var str string = "世界世界"
-	// fmt.Println("string length=", len(str))
+	// fmt.Println("str length=", len(str))
 
 	// var runes []rune = []rune(str)
 	// fmt.Println("runes array length=", len(runes))

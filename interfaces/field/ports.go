@@ -1,5 +1,5 @@
 package field
 
-type Moveable interface {
+type Movable interface {
 	Move() int
 }

@@ -11,11 +11,11 @@ import (
 func main() {
 	pA := player.NewPlayer(15, 25, 2)
 	pB := player.NewPlayer(12, 23, 3)
+
 	duel := duel.NewDuel(pA, pB)
+	field := field.NewField(pA, pB)
 
 	fmt.Println(duel.Present())
-
-	field := field.NewField(pA, pB)
 
 	fmt.Println(field.MovePlayers())
 }
