@@ -14,6 +14,13 @@ func main() {
 	var _ interface{}
 	var _ any // alias for interface{}
 
+	var _ map[string]int
+	var _ [5]string // array
+	var _ []string  // slice
+
+	var _ chan int
+	var _ func(bool) int
+
 	// var str string = "世界世界"
 	// fmt.Println("string length=", len(str))
 
