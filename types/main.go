@@ -8,9 +8,19 @@ func main() {
 	var _ float64 = 55.76
 
 	var _ complex128 = 4 - 5i
-	var _ rune = '\t' // alias for int32
+	var _ rune = 'ь' // alias for int32
+	var _ int32 = 'ж'
 
 	var _ interface{}
-	var _ any
+	var _ any // alias for interface{}
 
+	// var str string = "世界世界"
+	// fmt.Println("string length=", len(str))
+
+	// var runes []rune = []rune(str)
+	// fmt.Println("runes array length=", len(runes))
+	// for _, v := range runes {
+	// 	fmt.Printf("%s ", string(v))
+	// }
+	// fmt.Println()
 }
