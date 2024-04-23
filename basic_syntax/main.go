@@ -33,4 +33,8 @@ func main() {
 		fmt.Printf("key= %s, value= %d\n", key, val)
 	}
 
+	_, ok := pplAge["Max"]
+	if !ok {
+		pplAge["Max"] = 35
+	}
 }
