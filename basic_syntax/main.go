@@ -10,16 +10,17 @@ func main() {
 		fmt.Println(firstName, lastName)
 	}
 
-	for { // same as while(true) in other languages
+	// same as while(true)
+	for {
 		fmt.Println("endless loop")
 	}
 
 	var condition bool
 	for condition {
-		fmt.Println("endless loop")
+		fmt.Println("condition is true")
 	}
 
-	var numbers []int = []int{1, 2, 3, 4, 5, 6, 7}
+	numbers := []int{1, 2, 3, 4, 5, 6, 7}
 	for i := 0; i < len(numbers); i++ {
 		fmt.Println("numbers[i]=", numbers[i])
 	}
@@ -35,6 +36,7 @@ func main() {
 
 	_, ok := pplAge["Max"]
 	if !ok {
+		fmt.Println("Adding `Max` to the map")
 		pplAge["Max"] = 35
 	}
 }

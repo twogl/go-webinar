@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"log"
 
 	"github.com/twogl/go-webinar/errors_and_panics/store"
@@ -10,13 +9,13 @@ import (
 
 func main() {
 
-	defer func() {
-		if r := recover(); r != nil {
-			fmt.Println(fmt.Sprintf("panic recovered: %v", r))
-		}
-	}()
+	// // defer func() {
+	// // 	if r := recover(); r != nil {
+	// // 		fmt.Println(fmt.Sprintf("panic recovered: %v", r))
+	// // 	}
+	// // }()
 
-	_ = store.LoadConfig()
+	// _ = store.LoadConfig()
 
 	user, err := store.FindRandomUser()
 	if errors.Is(err, store.ErrConnectionFailed) {
@@ -25,7 +24,7 @@ func main() {
 		return
 	}
 	if err != nil {
-		log.Fatalf("find user by id: %s", err)
+		log.Fatalf("unexpected error: %s", err)
 		return
 	}
 

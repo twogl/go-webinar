@@ -7,12 +7,13 @@ func main() {
 	sl := []int{}
 	FillSlice(sl)
 
-	sl = make([]int, 0, 10)
-	FillSlice(sl)
+	// sl := make([]int, 0, 10)
+	// FillSlice(sl)
 
-	// arr := [2]int{1, 1}
-	// sl1 := arr[:]
-	// sl1[0] = 99
+	// important!
+	// arr := [3]int{1, 1, 1}
+	// sl := arr[1:3]
+	// sl[0] = 99
 	// fmt.Println(arr)
 
 }

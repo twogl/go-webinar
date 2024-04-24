@@ -22,5 +22,5 @@ func main() {
 	fmt.Println("House number:", p.Address.HouseNumber)
 	// fmt.Println("House number:", p.HouseNumber)
 
-	//fmt.Println(p.passportID)
+	// fmt.Println(p.passportID)
 }

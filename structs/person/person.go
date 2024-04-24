@@ -3,10 +3,11 @@ package person
 import "fmt"
 
 type Person struct {
-	Name       string
+	Name       string // <-- public
 	Age        int
-	passportID string // <-- private field
-	Address    Address
+	passportID string // <-- private
+
+	Address Address
 	// Address // <-- struct embedding
 }
 

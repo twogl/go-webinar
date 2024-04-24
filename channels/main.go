@@ -14,13 +14,13 @@ func main() {
 		c <- 1
 	}(ch)
 
-	fmt.Println("Channel is preventing the program from closing...")
+	fmt.Println("Channel is blocking the main goroutine...")
 	<-ch
 
 	// ch := make(chan struct{}, 1) // FIFO
 	// ch <- struct{}{}
-	// fmt.Println("success pushing to channel")
+	// fmt.Println("success pushing to channel (1)")
 	// ch <- struct{}{}
-	// fmt.Println("success pushing to channel")
+	// fmt.Println("success pushing to channel (2)")
 
 }
