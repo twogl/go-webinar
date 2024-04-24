@@ -12,16 +12,15 @@ type User struct {
 
 var ErrConnectionFailed error = errors.New("db conenction failed")
 
-func FindUserById(userId int) (*User, error) {
-	user, err := getUserFromRepo(userId)
+func FindRandomUser() (*User, error) {
+	user, err := getRandomUserFromRepo()
 	if err != nil {
 		return nil, fmt.Errorf("get user from repo: %w", err)
 	}
 	return user, nil
 }
 
-func getUserFromRepo(userId int) (*User, error) {
-
+func getRandomUserFromRepo() (*User, error) {
 	// always return conn error
 	return nil, ErrConnectionFailed
 }

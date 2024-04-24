@@ -18,7 +18,7 @@ func main() {
 
 	_ = store.LoadConfig()
 
-	user, err := store.FindUserById(5)
+	user, err := store.FindRandomUser()
 	if errors.Is(err, store.ErrConnectionFailed) {
 		log.Printf("find user by id: %s", err)
 		// handle connection error
