@@ -7,15 +7,6 @@ import (
 	"github.com/twogl/go-webinar/godoc_and_tests/my_math"
 )
 
-func ExampleAdd() {
-	fmt.Println(my_math.Add(5, 7))
-	// Output: 12
-}
-func ExampleMultiply() {
-	fmt.Println(my_math.Multiply(5, 7))
-	// Output: 35
-}
-
 func Test_Add(t *testing.T) {
 	testCases := []struct {
 		name string
@@ -44,4 +35,13 @@ func Benchmark_Add(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		my_math.Add(1, 2)
 	}
+}
+
+func ExampleAdd() {
+	fmt.Println(my_math.Add(5, 7))
+	// Output: 12
+}
+func ExampleMultiply() {
+	fmt.Println(my_math.Multiply(5, 7))
+	// Output: 35
 }
