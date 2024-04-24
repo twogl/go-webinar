@@ -21,15 +21,11 @@ func FindUserById(userId int) (*User, error) {
 }
 
 func getUserFromRepo(userId int) (*User, error) {
-	defer func() {
-		if r := recover(); r != nil {
-			fmt.Println(fmt.Sprintf("panic recovered in loadUserData: %v", r))
-		}
-	}()
 
-	if userId < 0 {
-		panic("invalid user id")
-	}
-
+	// always return conn error
 	return nil, ErrConnectionFailed
+}
+
+func LoadConfig() string {
+	panic("no config file found")
 }
