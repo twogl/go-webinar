@@ -3,7 +3,7 @@ package main
 import "github.com/twogl/go-webinar/6.defer/magic"
 
 func main() {
-	for n := range 5 {
+	for n := range 4 {
 		magic.DoMagic(n)
 	}
 

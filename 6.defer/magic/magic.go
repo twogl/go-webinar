@@ -6,7 +6,7 @@ import (
 
 func DoMagic(num int) {
 	fmt.Println("Hello world!")
-	//defer fmt.Println("==================================") //  FILO
+	// defer fmt.Println("==================================") //  FILO
 	defer fmt.Println("Bye world!")
 
 	if num%2 == 0 {

@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 
+	_ = [3]string{"one", "two", "three"}
+
 	sl := []int{}
 	FillSlice(sl)
 
@@ -13,7 +15,6 @@ func main() {
 	// important!
 	// arr := [3]int{1, 1, 1}
 	// sl := arr[1:3]
-	// sl = append(sl, 13)
 	// sl[0] = 99
 	// fmt.Println(arr)
 	// fmt.Println(sl)
