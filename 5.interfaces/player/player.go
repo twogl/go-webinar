@@ -6,15 +6,6 @@ type Player struct {
 	moveSpeed    int
 }
 
-// Constructor function
-func NewPlayer(rawDmg, weaponDmg, speed int) *Player {
-	return &Player{
-		rawDamage:    rawDmg,
-		weaponDamage: weaponDmg,
-		moveSpeed:    speed,
-	}
-}
-
 func (plr *Player) Damage() int {
 	return plr.rawDamage + plr.weaponDamage
 }

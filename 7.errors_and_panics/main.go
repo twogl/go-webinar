@@ -9,17 +9,17 @@ import (
 
 func main() {
 
-	// // defer func() {
-	// // 	if r := recover(); r != nil {
-	// // 		fmt.Println(fmt.Sprintf("panic recovered: %v", r))
-	// // 	}
-	// // }()
+	// defer func() {
+	// 	if r := recover(); r != nil {
+	// 		fmt.Println(fmt.Sprintf("panic recovered: %v", r))
+	// 	}
+	// }()
 
 	// _ = store.LoadConfig()
 
-	user, err := store.FindRandomUser()
+	_, err := store.FindRandomUser()
 	if errors.Is(err, store.ErrConnectionFailed) {
-		log.Printf("find user by id: %s", err)
+		log.Printf("find random user: %s", err)
 		// handle connection error
 		return
 	}
@@ -28,5 +28,4 @@ func main() {
 		return
 	}
 
-	log.Println("user: ", user)
 }

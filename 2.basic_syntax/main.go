@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var firstName string = "Penko"
-	lastName := "Penkov"
+	lastName := "Penkov" // <-- only with initialization
 
 	if firstName == "Penko" {
 		fmt.Println(firstName, lastName)

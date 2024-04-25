@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// _ is a blank identifier
 	var _ int8 = 127
@@ -7,9 +9,6 @@ func main() {
 	var _ bool = true
 	var _ string = "hello"
 	var _ float64 = 55.76
-
-	var _ complex128 = 4 - 5i
-	var _ rune = 'ь' // alias for int32
 
 	var _ interface{}
 	var _ any // alias for interface{}
@@ -20,14 +19,16 @@ func main() {
 
 	var _ func(bool) (int, error)
 	var _ chan int
+	var _ complex128 = 4 - 5i
+	var _ rune = 'ь' // alias for int32
 
-	// var str string = "世界世界"
-	// fmt.Println("str length=", len(str))
+	var str string = "世界世界"
+	fmt.Println("str length=", len(str))
 
-	// var runes []rune = []rune(str)
-	// fmt.Println("runes array length=", len(runes))
-	// for _, v := range runes {
-	// 	fmt.Printf("%s ", string(v))
-	// }
-	// fmt.Println()
+	var runes []rune = []rune(str)
+	fmt.Println("runes array length=", len(runes))
+	for _, v := range runes {
+		fmt.Printf("%s ", string(v))
+	}
+	fmt.Println()
 }

@@ -13,6 +13,7 @@ func main() {
 	// important!
 	// arr := [3]int{1, 1, 1}
 	// sl := arr[1:3]
+	// sl = append(sl, 13)
 	// sl[0] = 99
 	// fmt.Println(arr)
 	// fmt.Println(sl)
