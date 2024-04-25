@@ -1,6 +1,6 @@
 package main
 
-import "github.com/twogl/go-webinar/defer/magic"
+import "github.com/twogl/go-webinar/6.defer/magic"
 
 func main() {
 	for n := range 10 {

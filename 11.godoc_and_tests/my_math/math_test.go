@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/twogl/go-webinar/godoc_and_tests/my_math"
+	"github.com/twogl/go-webinar/11.godoc_and_tests/my_math"
 )
 
 func Test_Add(t *testing.T) {

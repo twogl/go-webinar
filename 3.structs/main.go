@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/twogl/go-webinar/structs/person"
+	"github.com/twogl/go-webinar/3.structs/person"
 )
 
 func main() {

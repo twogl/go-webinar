@@ -4,7 +4,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/twogl/go-webinar/errors_and_panics/store"
+	"github.com/twogl/go-webinar/7.errors_and_panics/store"
 )
 
 func main() {
