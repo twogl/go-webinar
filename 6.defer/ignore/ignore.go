@@ -23,6 +23,5 @@ func ReadGitignore() ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("io read whole file: %w", err)
 	}
-
 	return bytes, nil
 }

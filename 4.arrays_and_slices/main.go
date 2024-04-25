@@ -15,6 +15,7 @@ func main() {
 	// sl := arr[1:3]
 	// sl[0] = 99
 	// fmt.Println(arr)
+	// fmt.Println(sl)
 
 }
 

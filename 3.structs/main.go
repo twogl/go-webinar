@@ -20,7 +20,6 @@ func main() {
 	fmt.Println(p.Intro())
 
 	fmt.Println("House number:", p.Address.HouseNumber)
-	// fmt.Println("House number:", p.HouseNumber)
 
 	// fmt.Println(p.passportID)
 }

@@ -10,7 +10,6 @@ func main() {
 
 	var _ complex128 = 4 - 5i
 	var _ rune = 'ь' // alias for int32
-	var _ int32 = 'ж'
 
 	var _ interface{}
 	var _ any // alias for interface{}
